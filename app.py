@@ -19,7 +19,7 @@ def crawl():
         if url and pattern and level:
             right_input = True
             manager = Manager(level, pattern)
-            res = manager.manage_crawler(url)
+            manager.manage_crawler(url)
             print(manager.dict_result)
             return manager.dict_result
         raise Exception
